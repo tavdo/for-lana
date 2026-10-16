@@ -1,6 +1,9 @@
 // სიმღერის შესაცვლელად მხოლოდ ეს ID ჩაანაცვლე.
 const YOUTUBE_VIDEO_ID = "VAI-fUqoyOA";
 
+// "კი"-ზე იხსნება ეს პროფილი, რომ მომხმარებელმა ბლოკი მოხსნას.
+const INSTAGRAM_URL = "https://www.instagram.com/tavdgiridze_temo/";
+
 // "არა"-ს ყოველ გაქცევაზე ეს წარწერები რიგით იცვლება, ბოლოს კი თავიდან იწყება.
 const NO_LABELS = [
   "ნამდვილად? 🥺",
@@ -272,6 +275,7 @@ yesBtn.addEventListener("click", () => {
   noBtn.remove();
   showScreen("screen-thanks");
   startHeartRain();
+  window.open(INSTAGRAM_URL, "_blank", "noopener");
 });
 
 noBtn.addEventListener("touchstart", flee, { passive: false });
